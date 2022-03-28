@@ -25,6 +25,9 @@ const testUser = {
     password: "12345"
 }
 app.get("/test", (req, res) => {
+    console.log(
+        "server reach"
+    );
     db.query("INSERT TO user (username, password, firstName, lastName) VALUES (?,?,?,?)", testUser.username, testUser.password, testUser.firstName, testUser.lastName, (err, result) => {
         if (err){
             console.log(err);
