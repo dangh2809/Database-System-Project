@@ -5,7 +5,6 @@ function App() {
   return (
     <div className="App">
       <h1>Welcome to Database Project</h1>
-      <h2>testing automatic deploy on heroku 2 </h2>
     </div>
   );
 }
